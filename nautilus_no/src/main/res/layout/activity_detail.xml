@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_active_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:text="去什么鬼鹦鹉螺市集·万圣节狂欢夜"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_small"/>
+
+                <TextView
+                    android:id="@+id/tv_active_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="门票: ￥30.00"
+                    android:textColor="@color/normal_black"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="时间: 12:00 ~ 21:00"
+                    android:textColor="@color/normal_black"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="日期: 2015.06.13 ~ 06.14"
+                    android:textColor="@color/normal_black"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/gpsxx"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="地址: 大同坊巨鹿路(近成都北路)"
+                    android:textColor="@color/normal_black"/>
+
+                <TextView
+                    android:id="@+id/tv_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="路线: 一号线陕西南路四号口"
+                    android:textColor="@color/normal_black"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/dividing_line_layout"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_active_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                     />
+
+                <LinearLayout
+                    android:id="@+id/ll_detail_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="摊主招募"
+                        android:gravity="center|left"
+                        android:layout_weight="1"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                    <TextView
+                        android:id="@+id/tv_check_booth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="查看摊位信息"
+                        android:gravity="center|right"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/bianjixxhdpi"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/text_size_small"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step1"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_be_vendor"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="认证成为摊主"
+                        android:textSize="@dimen/text_size_small"
+                        android:gravity="center"
+                        android:background="@drawable/bg_btn_be_vendor_selector"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提交资料入驻鹦鹉螺成为认证摊主"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_mini"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step2"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_pay_deposit"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="缴纳摊位押金"
+                        android:textSize="@dimen/text_size_small"
+                        android:gravity="center"
+                        android:background="@drawable/bg_btn_be_vendor_selector"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="摊位押金所有活动通用，无需二次缴纳"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_mini"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step3"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_join_active"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="报名本次活动"
+                        android:textSize="@dimen/text_size_small"
+                        android:gravity="center"
+                        android:background="@drawable/bg_btn_be_vendor_selector"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="填写报名表单，申请报名本次活动"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_mini"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Step4"
+                        android:gravity="center"
+                        android:textColor="@color/blue"
+                        />
+
+                    <TextView
+                        android:id="@+id/btn_buy_booth"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/white"
+                        android:text="购买摊位"
+                        android:textSize="@dimen/text_size_small"
+                        android:gravity="center"
+                        android:background="@drawable/bg_btn_be_vendor_selector"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买本次活动摊位"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_size_mini"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/ck_booth_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:button="@drawable/umeng_update_button_check_selector"
+                    android:text="购摊提醒"
+                    style="@style/LoginCheckboxTheme"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/text_size_extra_extra_small"
+                    android:textColor="@color/normal_black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lv"/>
+    <LinearLayout
+        android:id="@+id/ll_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ticket_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/normal_black"/>
+
+        <com.nautilus.ywlfair.widget.RippleView
+            android:id="@+id/bt_buy_ticket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/dark_red"
+            android:gravity="center"
+            android:text="购买门票"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

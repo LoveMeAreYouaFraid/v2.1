@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zhy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingBottom="6dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门票"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_mini"
+            android:text="（门票不分场次）"
+            android:textColor="@color/normal_gray"/>
+    </LinearLayout>
+
+    <com.nautilus.ywlfair.widget.flowlayout.TagFlowLayout
+        android:id="@+id/id_flow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        zhy:max_select="1">
+    </com.nautilus.ywlfair.widget.flowlayout.TagFlowLayout>
+
+    <include layout="@layout/dividing_line_layout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="数量"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <ImageView
+            android:id="@+id/iv_subtract"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_subtraction_btn"/>
+
+        <EditText
+            android:id="@+id/et_ticket_num"
+            android:layout_width="47dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_frame_color"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="1"
+            android:textColor="@color/normal_black"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_add_btn"/>
+    </LinearLayout>
+
+    <include layout="@layout/dividing_line_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购买须知"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size_extra_extra_small"
+        android:textColor="@color/normal_gray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1）预定成功后，凭预定成功短信至现场活动前台兑换。"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size_extra_extra_small"
+        android:textColor="@color/normal_gray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2）一人一票，一经售出，概不退改。"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size_extra_extra_small"
+        android:textColor="@color/normal_gray"/>
+
+    <com.nautilus.ywlfair.widget.RippleView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_buy_ticket_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_middle"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.nautilus.ywlfair.widget.LoadMoreListView
+            android:id="@+id/list_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:divider="@null"
+            android:dividerHeight="@dimen/activity_horizontal_margin"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none">
+
+        </com.nautilus.ywlfair.widget.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/ic_empty"
+        android:gravity="center"
+        android:text="没有该类门票"
+        android:textColor="@color/normal_gray"
+        android:visibility="gone"/>
+
+</FrameLayout>

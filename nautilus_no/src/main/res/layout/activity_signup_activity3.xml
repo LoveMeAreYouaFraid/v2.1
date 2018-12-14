@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/schedule3" />
+
+            <LinearLayout
+                android:id="@+id/layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_press_selector"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/butt"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:text="9.货品价格区间"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/butt"
+                    android:drawableRight="@drawable/bianjixxhdpi"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/fifteen" />
+            </LinearLayout>
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_press_selector"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/physical_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/butt"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:paddingRight="@dimen/fifteen"
+                    android:text="10.是否有实体店"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/is_physical_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/butt"
+                    android:drawableRight="@drawable/bianjixxhdpi"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:paddingRight="@dimen/fifteen"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/physical_store_adders"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <include layout="@layout/fengexianx" />
+
+            <TextView
+                android:id="@+id/logo_up_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:text="11.品牌logo"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_pic_containnn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"></LinearLayout>
+            </HorizontalScrollView>
+
+            <com.nautilus.ywlfair.widget.WrapContentHeightGridView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:verticalSpacing="10dp" />
+
+            <include layout="@layout/fengexianx" />
+
+            <TextView
+                android:id="@+id/spec_needs_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@drawable/item_press_selector"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:text="12.特殊需求"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small" />
+
+
+            <TextView
+                android:id="@+id/tv_special_requirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <include layout="@layout/fengexianx" />
+
+            <TextView
+                android:id="@+id/sponsoring_resources"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@drawable/item_press_selector"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:text="13.媒体和赞助资源"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/tv_sponsoring_resources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <include layout="@layout/fengexianx" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@drawable/item_press_selector"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:text="14.您可以参加一下那些城市的活动"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen" />
+
+            <include layout="@layout/fengexianx" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

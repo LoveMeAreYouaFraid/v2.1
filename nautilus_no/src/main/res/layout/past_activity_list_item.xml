@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/home_pager_rounded"
+    android:layout_marginRight="@dimen/home_pager_rounded"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingBottom="10dp">
+
+    <com.nautilus.ywlfair.widget.MaskedImage
+        android:id="@+id/icon"
+        android:layout_width="348dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="348dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pass_shape"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:singleLine="true"
+        android:text="@string/action_settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_extra_large"
+        android:textStyle="bold" />
+
+</RelativeLayout>

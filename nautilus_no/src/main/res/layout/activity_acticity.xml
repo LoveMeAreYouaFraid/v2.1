@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <com.nautilus.ywlfair.widget.LoadMoreListView
+        android:id="@+id/lv_comment_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_control_bar"
+        android:layout_weight="1"
+        android:divider="@color/light_light_gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/iv_lotto"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_lotto"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/ll_control_bar"
+        android:background="@color/lins_hui" />
+
+    <LinearLayout
+        android:id="@+id/ll_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bt_like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/bt_like" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/lins_hui" />
+
+        <ImageView
+            android:id="@+id/bt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_press_selector"
+            android:scaleType="center"
+            android:src="@drawable/bt_comment" />
+
+        <com.nautilus.ywlfair.widget.RippleView
+            android:id="@+id/bt_buy_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/btn_buy_ticket_selector"
+            android:gravity="center"
+            android:text="我要买票"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_light_gray"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_reply_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/searchbox"
+            android:hint="输入评论回复内容"
+            android:maxLength="141"
+            android:padding="5dp"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/tv_confirm_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="回复"
+            android:textColor="@color/text_blue" />
+    </LinearLayout>
+</RelativeLayout>

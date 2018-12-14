@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="@integer/exchange_duration"
+        android:drawable="@drawable/exchange1"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange2"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange3"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange4"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange5"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange6"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange7"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange8"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange9"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange10"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange11"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange12"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange13"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange14"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange15"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange16"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange17"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange18"/>
+
+    <item android:duration="@integer/exchange_duration"
+          android:drawable="@drawable/exchange19"/>
+</animation-list>

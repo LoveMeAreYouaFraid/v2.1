@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_selector"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="文章详情"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_middle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/msw_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/ll_control_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/bt_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:scaleType="center"
+                android:src="@drawable/h5bt_like"/>
+
+
+            <ImageView
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+
+                android:scaleType="center"
+                android:src="@drawable/h5bt_comment"/>
+
+
+            <ImageView
+                android:id="@+id/bt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:scaleType="center"
+                android:src="@drawable/h5ic_share_btn"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_light_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_reply_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/searchbox"
+                android:hint="输入评论回复内容"
+                android:maxLength="141"
+                android:padding="5dp"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <TextView
+                android:id="@+id/tv_confirm_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="回复"
+                android:textColor="@color/text_blue"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

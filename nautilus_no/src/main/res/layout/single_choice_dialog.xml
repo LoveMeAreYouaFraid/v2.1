@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:text="请选择"
+        android:textColor="@color/dark_brown"
+        android:textSize="@dimen/text_size_small" />
+
+    <include layout="@layout/fengexianx" />
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/content_color"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/transparent"
+        android:visibility="visible" />
+
+</LinearLayout>

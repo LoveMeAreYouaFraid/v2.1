@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/activity_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_btn_press_selector"
+            android:src="@drawable/ic_back_selector"/>
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="身份认证"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/tv_top_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_default_selector"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="保存"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_small"/>
+    </RelativeLayout>
+
+    <include layout="@layout/dividing_line_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.上传手持身份证（人像面） 半身照"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="（请确保姓名，身份证号码清晰）"
+                android:textColor="@color/normal_gray"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/identity_first"
+                    app:aspectRatio="1.4"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:id="@+id/iv_add_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_add_identity_selector"
+                    app:aspectRatio="1.4"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.上传身份证人像面"
+                android:textColor="@color/normal_black"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/identity_second"
+                    app:aspectRatio="1.4"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:id="@+id/iv_add_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_add_identity_selector"
+                    app:aspectRatio="1.4"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.上传身份证国徽面"
+                android:textColor="@color/normal_black"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/identity_third"
+                    app:aspectRatio="1.4"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:id="@+id/iv_add_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_add_identity_selector"
+                    app:aspectRatio="1.4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

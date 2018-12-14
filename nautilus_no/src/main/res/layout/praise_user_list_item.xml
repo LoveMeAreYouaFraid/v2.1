@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户昵称"
+                android:textColor="@color/extra_dark_gray"
+                android:drawableRight="@drawable/ic_praise"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_name"
+                android:drawableLeft="@drawable/gpsxx"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxWidth="150dp"
+                android:singleLine="true"
+                android:text="上海罢赛美术馆"
+                android:textColor="@color/fontgrey"
+                android:textSize="@dimen/text_size_mini"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reply_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_background"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2016.02.21 16:30:50"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_extra_small"/>
+    </LinearLayout>
+
+</LinearLayout>

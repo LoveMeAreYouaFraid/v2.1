@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:background="@color/activity_background">
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_btn_press_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="取消"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/extra_dark_gray"
+            android:text="我的评论"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@+id/tv_top_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_default_selector"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="发送"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_middle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_gray" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_bar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="left|top"
+                android:hint="请输入内容..."
+                android:maxLength="1000"
+                android:maxLines="10"
+                android:minHeight="160dp"
+                android:padding="10dp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_light_gray" />
+
+            <com.nautilus.ywlfair.widget.WrapContentHeightGridView
+                android:id="@+id/gv_pictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:verticalSpacing="10dp"></com.nautilus.ywlfair.widget.WrapContentHeightGridView>
+
+            <RatingBar
+                android:id="@+id/room_ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/gpsxx"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="添加位置"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_rating"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:text="选择评价:"
+                    android:textColor="@color/extra_dark_gray" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/m_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv"
+                    android:isIndicator="false"
+                    android:rating="10"
+                    android:stepSize="1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

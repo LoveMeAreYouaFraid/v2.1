@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+
+    <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+        android:id="@+id/iv_goods_big"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:aspectRatio="2.5" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+            android:id="@+id/iv_goods_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.15"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:aspectRatio="1.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                android:id="@+id/iv_goods_small_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:aspectRatio="2.64" />
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                android:id="@+id/iv_goods_small_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:aspectRatio="2.64" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/hei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热卖商品"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/hei" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RippleView">
+        <attr name="rippleColo" format="color" />
+        <attr name="alphaFactor" format="float" />
+        <attr name="hover" format="boolean" />
+    </declare-styleable>
+
+    <style name="DialtactsDialpadButtonStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <array name="popmenu_icons">
+        <item>@drawable/input_format_ok</item>
+        <item>@drawable/input_format_error</item>
+    </array>
+    <array name="detail_title_strings">
+        <item>@string/title_detail_string</item>
+        <item>@string/title_live_string</item>
+        <item>@string/title_comment_string</item>
+    </array>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension" />
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+
+    <array name="store_type">
+        <item>@string/taobao</item>
+        <item>@string/jingdong</item>
+        <item>@string/mogujie</item>
+        <item>@string/meilishuo</item>
+        <item>@string/etsy</item>
+        <item>@string/other</item>
+    </array>
+
+    <array name="order_status_tip">
+        <item>@string/status0</item>
+        <item>@string/status1</item>
+        <item>@string/status2</item>
+        <item>@string/status3</item>
+        <item>@string/status4</item>
+
+    </array>
+
+    <array name="product_from">
+        <item>@string/from0</item>
+        <item>@string/from1</item>
+        <item>@string/from2</item>
+        <item>@string/from3</item>
+    </array>
+
+    <array name="order_type">
+        <item>@string/order_type1</item>
+        <item>@string/order_type2</item>
+        <item>@string/order_type3</item>
+        <item>@string/order_type4</item>
+        <item>@string/order_type5</item>
+    </array>
+
+</resources>

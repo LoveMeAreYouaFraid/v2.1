@@ -1,0 +1,5 @@
+include ':indicatorlibrary', ':mylibrary'
+include ':pagerSlidingTabStrip'
+include ':nautilus_no'
+include ':OneSDK'
+include ':multi-image-selector'

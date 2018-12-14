@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bluebg">#007edf</color>
+    <color name="greybg">#EEEEEE</color>
+    <color name="fontgrey">#999999</color>
+    <color name="black">#DD000000</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="gray">#FF888888</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent_white">#DDFFFFFF</color>
+    <color name="light_black">#ff514647</color>
+    <color name="dark_dark_gray">#ff4E4141</color>
+    <color name="light_light_gray">#FFE8E8E8</color>
+    <color name="light_gray">#8F8E94</color>
+    <color name="beijing_hui">#ffF5F5F5</color>
+    <color name="light_blue">#ff16a28d</color>
+    <color name="dark_green">#FF16A28D</color>
+    <color name="dark_grey">#FF666666</color>
+    <color name="hei">#3d3d3d</color>
+    <color name="hui">#FF8F8F8F</color>
+    <color name="text_blue">#FF4CA4EF</color>
+    <color name="text_juhong">#DF6C51</color>
+    <color name="text_danhuang">#ECFFFA</color>
+    <color name="lins_hui">#E2E2E2</color>
+    <color name="bt_huang">#EDCF6F</color>
+    <color name="bt_lv">#2ADA9E</color>
+    <color name="bt_lan">#2AC7DE</color>
+    <color name="bt_zi">#C966E5</color>
+    <color name="money_num">#ec6432</color>
+    <color name="ju_hong">#EA7F66</color>
+    <color name="light_gray_transparent">#11000000</color>
+    <color name="gray_transparent">#33000000</color>
+    <color name="dark_brown">#84400e</color>
+    <color name="important_reminders">#FF3424</color>
+    <color name="vertical_line">#e6e6e6</color>
+    <color name="gray_fyi">#f1f1f1</color>
+    <color name="money_red">#f5703f</color>
+    <color name="money_tips">#ff0000</color>
+
+
+    <!-- 标准颜色   需要用到颜色从这里选 -->
+    <color name="theme_color">#2BC9A3</color>
+    <color name="divider_color">#aeaeae</color>
+    <color name="content_color">#e2e2e2</color>
+    <color name="btn_back_color">#c3c3c3</color>
+    <color name="activity_background">#fafafa</color>
+    <color name="gray_background">#f3f3f3</color>
+    <color name="normal_black">#333333</color>
+    <color name="extra_dark_gray">#ff545454</color>
+    <color name="dark_gray">#ff666666</color>
+    <color name="normal_gray">#999999</color>
+    <color name="blue">#2099F1</color>
+    <color name="lv">#ff2BC9A3</color>
+    <color name="text_read">#FFAEA3</color>
+    <color name="dark_red">#D8684E</color>
+    <color name="transparent_gray">#22999999</color>
+    <color name="yellow_normal">#FEBE2E</color>
+    <color name="tab_selected_color">#E6A719</color>
+    <color name="light_yellow">#F9D668</color>
+    <color name="tab_default_color">#929292</color>
+    <color name="vendor_text_color">#C6A092</color>
+    <color name="white_transparent">#55FFFFFF</color>
+
+</resources>

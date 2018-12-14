@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/schedule2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_goods_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_press_selector"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/xinghao" />
+
+                    <TextView
+                        android:id="@+id/goods_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/butt"
+                        android:layout_weight="1"
+
+                        android:gravity="center|left"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text="1.现场携带货品的风格"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:background="@drawable/item_press_selector"
+                        android:drawableRight="@drawable/bianjixxhdpi"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <include layout="@layout/xinghao" />
+
+                <TextView
+                    android:id="@+id/goods_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/butt"
+                    android:background="@drawable/item_press_selector"
+                    android:drawableRight="@drawable/bianjixxhdpi"
+                    android:gravity="center|left"
+                    android:paddingRight="@dimen/fifteen"
+                    android:text="2.现场携带货品的品类"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_goods_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/fifteen"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/food_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <include layout="@layout/fengexianx" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/xinghao" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/butt"
+                        android:background="@drawable/item_press_selector"
+                        android:gravity="center|left"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text="3.餐饮摊位三证电子版"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </LinearLayout>
+
+
+                <com.nautilus.ywlfair.widget.WrapContentHeightGridView
+                    android:id="@+id/ll_pic_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:padding="5dp"
+                    android:verticalSpacing="10dp" />
+
+                <include layout="@layout/fengexianx" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/butt"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/butt"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text=" 4.餐饮摊位用电情况填写"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <TextView
+                        android:id="@+id/add_electricity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:background="@drawable/item_press_selector"
+                        android:drawableRight="@drawable/bianjixxhdpi"
+                        android:gravity="center"
+                        android:text="新增"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/add_layout_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <include layout="@layout/xinghao" />
+
+                <TextView
+                    android:id="@+id/dragon_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/butt"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_press_selector"
+                    android:gravity="center|left"
+                    android:paddingRight="@dimen/fifteen"
+                    android:text="3.现场自带龙门架个数"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/tv_dragon_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:drawableRight="@drawable/bianjixxhdpi"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <include layout="@layout/xinghao" />
+
+                <TextView
+                    android:id="@+id/title_intr_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/butt"
+                    android:background="@drawable/item_press_selector"
+                    android:drawableRight="@drawable/bianjixxhdpi"
+                    android:gravity="center|left"
+                    android:paddingRight="@dimen/fifteen"
+                    android:text="4.简单文字介绍"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/intr_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_press_selector"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/fifteen"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:textSize="@dimen/text_size_extra_small"
+                android:visibility="gone" />
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <include layout="@layout/xinghao" />
+
+                <TextView
+                    android:id="@+id/tv_goods_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/butt"
+                    android:background="@drawable/item_press_selector"
+                    android:gravity="center|left"
+                    android:paddingRight="@dimen/fifteen"
+                    android:text="5.携带到现场的货品图片"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:text="注：请保证产品的真实性，如现场发现非申报货品，立即取消资格，并自行承担所有后果。"
+                android:textColor="@color/important_reminders"
+                android:textSize="11dp" />
+
+
+            <com.nautilus.ywlfair.widget.WrapContentHeightGridView
+                android:id="@+id/ll_goods_pic_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:verticalSpacing="10dp" />
+
+            <include layout="@layout/fengexianx" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:background="@color/white"
+                    android:gravity="center|left"
+                    android:text="6.请在此上传往期参加市集的现场全景摊位图（需上传整个摊位布置的全景图），将有一定几率被选中免费升级为3×3米大展位："
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+            </LinearLayout>
+
+            <com.nautilus.ywlfair.widget.WrapContentHeightGridView
+                android:id="@+id/ll_big_pic_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:verticalSpacing="10dp" />
+
+            <include layout="@layout/fengexianx" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

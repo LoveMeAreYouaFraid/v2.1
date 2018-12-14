@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+
+    <string name="app_name">鹦鹉螺市集</string>
+    <string name="hello_world">"\u3000\u3000这是本地的文字。"    </string>
+    <string name="action_settings">大金刚菩提</string>
+    <string name="action_titles">鹦鹉螺市集</string>
+    <string name="action_string_1">1.鹦鹉螺市集2015\u002d10\u002d01</string>
+    <string name="action_string_2">2.鹦鹉螺市集2015\u002d10\u002d01</string>
+    <string name="action_string_3">3.鹦鹉螺市集2015\u002d10\u002d01</string>
+    <string name="action_string_4">4.鹦鹉螺市集2015\u002d10\u002d01</string>
+    <string name="title_city_name">%1$s\u3000%2$s\u3000%3$s</string>
+    <string name="title_detail_string">详情</string>
+    <string name="title_live_string">记录</string>
+    <string name="title_comment_string">评论</string>
+    <string name="empty_view_string">什么也没有加点什么吧！</string>
+    <string name="title_activity_bill_list">BillListActivity</string>
+    <string name="title_activity_refund_orders">RefundOrdersActivity</string>
+    <string name="title_activity_refund_status">RefundStatusActivity</string>
+    <string name="title_activity_gen_qrcode">GenQRCodeActivity</string>
+    <string name="title_activity_aliqrcode">ALIQRCodeActivity</string>
+    <string name="title_activity_orders_entry">OrdersEntryActivity</string>
+    <string name="taobao">淘宝</string>
+    <string name="jingdong">京东</string>
+    <string name="mogujie">蘑菇街</string>
+    <string name="meilishuo">美丽说</string>
+    <string name="etsy">Etsy</string>
+    <string name="other">其他</string>
+
+    <string name="status0">十五分钟后未付款自动取消</string>
+    <string name="status1">待发货</string>
+    <string name="status2">待收货</string>
+    <string name="status3">待评价</string>
+    <string name="status4">已评价</string>
+
+
+    <string name="from0">原创</string>
+    <string name="from1">手做</string>
+    <string name="from2">Vintage</string>
+    <string name="from3">其他</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="order_type1">鹦鹉螺门票购买</string>
+    <string name="order_type2">鹦鹉螺摊位购买</string>
+    <string name="order_type3">鹦鹉螺商品购买</string>
+    <string name="order_type4">鹦鹉螺押金支付</string>
+    <string name="order_type5">鹦鹉螺线下支付</string>
+
+
+    <string name="tab_name_1">市集</string>
+    <string name="tab_name_2">发现</string>
+    <string name="tab_name_3">嗨购</string>
+    <string name="tab_name_4">我的</string>
+
+    <string name="resend">重新发送</string>
+    <string name="deposit_notes">1、每次报名活动前必须先缴纳摊位押金，目的是为了保证参加线下市集的商户能够遵守活动的各项要求。（如：不迟到、不早退，按照主办方规定的时间和区域内展示和搭建。并且不会污损活动现场的各项设施。）
+    \n\n 2、摊位押金可以在线下市集结束后随时申请退款，退款将直接返还至您缴纳押金时所使用的第三方支付账户。
+    \n\n 3、如在一次线下市集结束后不申请退还摊位押金，则下次报名时不用重复缴纳。</string>
+
+    <string name="vendor_warm">认证摊主后您可以：\n1.报名参加鹦鹉螺线下市集活动，出售商品。\n2.开通摊主VIP积分系统，等级越高，优惠越大，特选越多。
+    \n3.有机会成为鹦鹉螺推荐摊主，享受免费广告位、微信微博推广。\n4.精品活动推送，再也不怕错过和小螺一起摆摊。</string>
+
+    <string name="cash_warm">提现成功后，金额将转至您绑定的支付宝账户。\n到账时间：1~7个工作日（视第三方支付平台具体情况而定）</string>
+
+    <string name="bind_ali_warm">注意事项：\n1. 此账户为鹦鹉螺市集与您结算提现使用的通道。\n2.请确认支付宝及姓名为本人使用账户。
+    \n3.绑定成功后，暂不支持修改支付宝账户，请谨慎绑定。\n4.如有任何疑问，请联系鹦鹉螺大使微信。</string>
+
+    <string name="set_password_warm">1.支付密码将用于钱包支付时使用。\n\n2.支付密码将用于提现时确认使用。</string>
+
+    <string name="vendor_question">1.认证摊主需要符合哪些条件？
+    \n只要您是独立设计师、手工制作者、vintage 卖家或者有较高品质商品的贩售者，即可认证鹦鹉螺市集的摊主。
+
+    \n\n2.认证摊主需要缴费吗？
+    \n不需要，认证摊主是免费的。
+
+    \n\n3.认证摊主的流程是怎么样的？
+    \n返回上一页，点击【开始认证】，按提示填写认证资料表并提交成功即可。
+
+    \n\n4.提交认证资料后多久会得到回复？
+    \n您填写的认证资料表提交成功后，我们会在7个工作日内反馈您认证的结果。
+
+    \n\n5.认证摊主后，如何参与鹦鹉螺线下市集？
+    \n在我的—>切换至摊主身份后，点击底部【摆摊】按钮，挑选您想参加的线下市集，按提示申请摊位即可。</string>
+
+    <string name="invitation_code_hint">请输入邀请码(没有可不填)</string>>
+    <string name="invitation_code_txt">1、输入邀请码并通过摊主认证后，即可获得20摊主积分（价值￥20），积分可用于购买摊位和各类增值服务。
+   \n 2、每个用户只能被邀请一次，不能重复邀请。
+  \n 3、使用微信、微博、QQ第三方登录的用户需先绑定手机后，再输入邀请码。</string>>
+
+
+</resources>

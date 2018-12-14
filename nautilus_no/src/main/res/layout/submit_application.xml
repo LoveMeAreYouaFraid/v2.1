@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:maxLines="2"
+                android:padding="15dp"
+                android:text="温馨提醒：您确定要提交申请吗，退款成功后，您想购买我们的摊位，需要再次缴纳押金。"/>
+
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:hint="请输入您的手机号"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small"
+                android:inputType="phone"/>
+
+            <include layout="@layout/fengexianx"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:hint="退款方式"
+                android:paddingLeft="15dp"
+                android:phoneNumber="true"/>
+
+            <include layout="@layout/fengexianx"/>
+
+            <TextView
+                android:id="@+id/tv_choose_channel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/item_press_selector"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|left"
+                android:text="支付宝"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:phoneNumber="true"/>
+
+            <include layout="@layout/fengexianx"/>
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:hint="请输入退款账户"
+                android:paddingLeft="15dp"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <EditText
+                android:id="@+id/et_real_name"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:hint="请输入支付宝认证姓名"
+                android:paddingLeft="15dp"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:paddingRight="@dimen/fifteen"
+                    android:paddingTop="@dimen/fifteen">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余押金"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <TextView
+                        android:id="@+id/tv_users_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_line_height"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fifteen">
+
+                    <TextView
+                        android:id="@+id/tv_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_extra_extra_small" />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_extra_extra_small" />
+
+                    <TextView
+                        android:id="@+id/tv_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_extra_extra_small" />
+
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx" />
+
+                <LinearLayout
+                    android:id="@+id/old_money_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/butt"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:text="历史扣款"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <TextView
+                        android:id="@+id/msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/butt"
+                        android:background="@color/activity_background"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:text="您参加活动时的表现很好噢，未产生任何扣款~"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_extra_extra_small"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/deductions_log_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:background="@color/activity_background"
+                        android:clickable="false"
+                        android:divider="@null"
+                        android:listSelector="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/back_money_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/butt"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:text="退款申请"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <ListView
+                        android:id="@+id/refund_log_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:background="@color/activity_background"
+                        android:clickable="false"
+                        android:divider="@null"
+                        android:listSelector="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/butt"
+                        android:background="@color/white"
+                        android:gravity="center|right"
+                        android:paddingRight="@dimen/fifteen">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="剩余押金："
+                            android:textColor="@color/normal_black"
+                            android:textSize="@dimen/text_size_shiwu" />
+
+                        <TextView
+                            android:id="@+id/surplus_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/money_num"
+                            android:textSize="@dimen/text_size_shiwu" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx" />
+
+                <TextView
+                    android:id="@+id/tv_refund_butt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/item_press_selector"
+                    android:gravity="center"
+                    android:text="申请退押金"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_shiwu" />
+
+            </LinearLayout>
+
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

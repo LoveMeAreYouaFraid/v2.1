@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_key_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_value_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:textColor="@color/money_red"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <include layout="@layout/fengexianx" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/shi_er"
+            android:paddingTop="@dimen/shi_er">
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:lineSpacingExtra="@dimen/shi_er"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:lineSpacingExtra="@dimen/shi_er"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_shiwu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/tv_butt_look_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:text="查看钱包入账"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_small" />
+
+    <include layout="@layout/fengexianx" />
+</LinearLayout>

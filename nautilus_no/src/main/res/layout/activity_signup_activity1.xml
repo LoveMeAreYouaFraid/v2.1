@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/schedule1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/fifteen">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fifteen"
+                    android:textColor="@color/blue"
+
+                    android:textSize="15dp" />
+
+                <include layout="@layout/fengexianx" />
+
+                <TextView
+                    android:id="@+id/tv_roundno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/tv_start_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/title_right_margin"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/tv_activity_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/title_right_margin"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <TextView
+                    android:id="@+id/booth_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fifteen"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small"
+                    android:visibility="gone" />
+
+
+                <include layout="@layout/fengexianx" />
+
+                <TextView
+                    android:id="@+id/tv_precautions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+                <include layout="@layout/fengexianx" />
+
+                <TextView
+                    android:id="@+id/ywl_ambassador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:gravity="center|left"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/text_size_extra_small" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/xinghao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fifteen"
+
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:gravity="center|left"
+                        android:text="姓名："
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <EditText
+                        android:id="@+id/ed_activity_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center|right"
+                        android:hint="请填写您的真实姓名"
+                        android:textColor="@color/fontgrey"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/xinghao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:gravity="center|left"
+                        android:text="联系方式："
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <EditText
+                        android:id="@+id/ed_activity_one_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center|right"
+                        android:hint="请填写您的联系方式"
+                        android:maxLength="11"
+                        android:inputType="phone"
+                        android:textColor="@color/fontgrey"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <ImageView
+                        android:id="@+id/enter_remind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/xinghao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:gravity="center|left"
+                        android:text="微信账号："
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_small" />
+
+                    <EditText
+                        android:id="@+id/ed_activity_one_wx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/fifteen"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center|right"
+                        android:hint="请填写您的微信号"
+                        android:textColor="@color/fontgrey"
+                        android:textSize="@dimen/text_size_extra_small" />
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

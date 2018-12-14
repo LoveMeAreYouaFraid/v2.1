@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="绑定手机"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_small"/>
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_warm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="请输入要绑定的新手机"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/choose_region"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_h"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@drawable/item_press_selector">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="国家和地区"
+                android:textColor="@color/extra_dark_gray"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center"
+                android:text="中国大陆"
+                android:textColor="@color/extra_dark_gray"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/life_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_h"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="手机号"
+                android:textColor="@color/extra_dark_gray"/>
+
+            <EditText
+                android:id="@+id/ed_pnone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:textColor="@color/normal_black"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/text_size_extra_small"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/life_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_h"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="验证码"
+                android:textColor="@color/extra_dark_gray"/>
+
+            <EditText
+                android:id="@+id/ed_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:textColor="@color/normal_black"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@color/lv"/>
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/item_press_selector"
+                android:gravity="center"
+                android:minWidth="@dimen/toolbar_h"
+                android:padding="@dimen/gridview_horizontal_spacing"
+                android:text="发送验证码"
+                android:textColor="@color/extra_dark_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_warm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1、绑定的手机号码将用于找回支付密码使用"
+        android:textSize="@dimen/text_size_extra_extra_small"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:textColor="@color/normal_gray"/>
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_login_btn_selector"
+        android:gravity="center"
+        android:text="完成绑定"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

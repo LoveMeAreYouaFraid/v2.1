@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:textColor="@color/dark_brown"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider_color"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/transparent"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/view_determine_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_default_selector"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_default_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

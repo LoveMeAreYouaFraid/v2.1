@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="请选择数量"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="没带"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="一个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="二个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="三个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="四个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="五个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="六个"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/num8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+</LinearLayout>

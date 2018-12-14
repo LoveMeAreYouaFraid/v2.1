@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/root_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_vendor_level"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/toolbar_h"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            android:id="@+id/tv_top_bar_back"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_back_white"
+                            android:paddingLeft="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_top_bar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/iv_top_bar_right"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_instruction"/>
+
+                    </RelativeLayout>
+
+                    <com.nautilus.ywlfair.widget.MyHorizontalScrollView
+                        android:id="@+id/line_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:scrollbars="none"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.nautilus.ywlfair.widget.CustomLineView
+                                android:id="@+id/line_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="160dp"
+                                custom:circleColor="#FFF6F600"
+                                custom:circleWidth="2dp"
+                                custom:firstColor="#00b8b0"
+                                custom:levelNameColor="#316690"
+                                custom:levelNameLightColor="#f5703f"
+                                custom:secondColor="#00FFF4"
+                                custom:speed="10"
+                                />
+                        </LinearLayout>
+                    </com.nautilus.ywlfair.widget.MyHorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_score_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_vendor_score"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/normal_black"
+                            android:textSize="@dimen/text_size_middle"/>
+
+                        <TextView
+                            android:id="@+id/tv_is_can_buy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="可购买摊位"
+                            android:textColor="@color/normal_gray"
+                            android:textSize="@dimen/text_size_extra_extra_small"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/content_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_get_money"/>
+
+                        <ImageView
+                            android:id="@+id/iv_money_code"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_qr_code"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/fengexianx"/>
+
+                <TextView
+                    android:id="@+id/tv_num_privilege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_color"
+                    android:padding="10dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_extra_extra_small"/>
+
+                <com.nautilus.ywlfair.widget.MyGridView
+                    android:id="@+id/level_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/content_color"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="1dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

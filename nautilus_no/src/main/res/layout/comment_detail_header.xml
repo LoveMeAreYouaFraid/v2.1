@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_official_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_official_tag"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/normal_black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_extra_small" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_small" />
+
+    <TableLayout
+        android:id="@+id/tl_multi_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" >
+
+        <TableRow
+            android:id="@+id/tr_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:visibility="gone" >
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone" >
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_multi_pics_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                app:aspectRatio="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_praise"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="删除"
+            android:textColor="@color/normal_gray"
+            android:textSize="@dimen/text_size_extra_extra_small" />
+
+         <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_address"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/tv_comment_num"
+            android:drawablePadding="5dp"
+            android:background="@drawable/top_btn_press_selector"
+            android:textColor="@color/normal_gray"
+            android:drawableLeft="@drawable/ic_click_praise"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_address"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:background="@drawable/top_btn_press_selector"
+            android:drawableLeft="@drawable/ic_click_comment"
+            android:textColor="@color/normal_gray"
+            android:textSize="@dimen/text_size_extra_small" />
+    </RelativeLayout>
+
+</LinearLayout>

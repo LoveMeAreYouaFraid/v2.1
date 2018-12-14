@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/ic_vendor_background"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back_nor"/>
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="摊主认证"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_large"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_introduce"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_vendor_logo"/>
+
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="15dp"
+                android:text="      鹦鹉螺市集是一个搜罗世界奇趣美物，全球个性化商品O2O平台。为独立设计师、手工匠人和Vintage爱好者及追求生活品质的你打造一个交流平台。"
+                android:textColor="@color/normal_black"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/divider_color"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/vendor_text_color"
+                android:textSize="@dimen/text_size_extra_small"
+                android:text="@string/vendor_warm"/>
+
+            <TextView
+                android:id="@+id/tv_vendor_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="摊主常见问题答疑>>"
+                android:textColor="@color/text_blue"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tv_begin_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_btn_be_vendor_selector"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:paddingTop="10dp"
+                android:text="开始认证"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="40dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

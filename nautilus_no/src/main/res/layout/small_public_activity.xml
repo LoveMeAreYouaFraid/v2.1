@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@color/white"
+        android:hint="请填写电器名"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_extra_small"
+        android:visibility="gone" />
+
+    <include layout="@layout/fengexianx" />
+
+    <EditText
+        android:id="@+id/power"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@color/white"
+        android:hint="请填写电器功率(单位/瓦)"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:inputType="number"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_extra_small"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_ed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/my_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:maxLength="200"
+            android:padding="@dimen/fifteen"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/ed_price1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/butt"
+            android:layout_weight="1"
+            android:background="@color/beijing_hui"
+            android:hint="请输入数字如1000"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~ "
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/ed_price2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/butt"
+            android:layout_weight="1"
+            android:background="@color/beijing_hui"
+            android:hint="请输入数字如2000"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+    </LinearLayout>
+</LinearLayout>

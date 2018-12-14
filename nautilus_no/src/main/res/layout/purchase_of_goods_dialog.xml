@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:zhy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="@dimen/fifteen"
+            android:text="dsada"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:paddingRight="@dimen/fifteen"
+            android:text="dsada"
+
+            android:textColor="@color/money_num"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_goods_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="6dp"
+            android:paddingRight="@dimen/fifteen"
+            android:text="dsada"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:text="请选择分类"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <include layout="@layout/dividing_line_layout"/>
+
+     <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginTop="@dimen/fifteen"
+            android:text="颜色"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_extra_small"/>-->
+
+        <com.nautilus.ywlfair.widget.flowlayout.TagFlowLayout
+            android:id="@+id/id_flow_layout"
+            zhy:max_select="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+        </com.nautilus.ywlfair.widget.flowlayout.TagFlowLayout>
+
+        <include layout="@layout/dividing_line_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="购买数量"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_shiwu"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/iv_subtract"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_subtraction_btn"/>
+
+            <EditText
+                android:id="@+id/et_ticket_num"
+                android:layout_width="47dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_frame_color"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="1"
+                android:textColor="@color/normal_black"/>
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_add_btn"/>
+        </LinearLayout>
+
+        <include layout="@layout/dividing_line_layout"/>
+
+        <TextView
+            android:id="@+id/tv_post_days"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:gravity="center|left"
+            android:text="卖家承诺七天发货"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_extra_small"/>
+
+        <include layout="@layout/dividing_line_layout"/>
+
+        <com.nautilus.ywlfair.widget.RippleView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/btn_buy_ticket_selector"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:background="@color/activity_background">
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back_nor"/>
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="请填写公司名称"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_middle"/>
+
+        <TextView
+            android:id="@+id/tv_top_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_default_selector"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="提交"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_extra_small" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/content_color"/>
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="请填写公司名称..."
+        android:maxLength="1000"
+        android:maxLines="10"
+        android:minHeight="200dp"
+        android:padding="10dp"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

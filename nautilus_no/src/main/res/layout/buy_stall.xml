@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zhy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_top_bar_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_btn_press_selector"
+            android:src="@drawable/ic_back_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="摊位图"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_large"/>
+    </RelativeLayout>
+
+    <include layout="@layout/dividing_line_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:id="@+id/iv_stall_pic"
+                    xmlns:app="http://schemas.android.com/apk/res/com.nautilus.ywlfair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:aspectRatio="1.44"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/new_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="折扣价：￥0.01"
+                        android:textColor="@color/normal_gray"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_extra_extra_small"/>
+
+                    <TextView
+                        android:id="@+id/old_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="摊位价格：￥0.01"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_extra_extra_small"/>
+
+                </LinearLayout>
+
+
+                <com.nautilus.ywlfair.widget.flowlayout.TagFlowLayout
+                    android:id="@+id/id_flowlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    zhy:max_select="1"/>
+
+                <TextView
+                    android:id="@+id/tv_booth_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/fifteen"
+                    android:textColor="@color/dark_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\t\t日期: 2015.03.15 ~ 03.25"
+                        android:textColor="@color/dark_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_enter_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="摊主入场: 7：30 AM ~ 09：00 AM"
+                        android:textColor="@color/dark_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="市集开始: 09:30 ~ 19:00"
+                        android:textColor="@color/dark_gray"/>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/item2"
+                    layout="@layout/buy_stall_item2"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_buy_stall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/fifteen"
+                android:background="@drawable/bg_commit_btn_selector"
+                android:text="购买摊位"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

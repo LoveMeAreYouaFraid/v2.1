@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h">
+
+        <ImageView
+            android:id="@+id/iv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_selector"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="文章详情"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_middle"/>
+
+        <TextView
+            android:id="@+id/tv_title_r"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="中奖记录"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_middle"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <include layout="@layout/fengexianx"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/msw_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/ll_control_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/butt"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/bt_like"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:scaleType="center"
+                android:src="@drawable/h5bt_like"/>
+
+
+            <ImageView
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="12dp"
+                android:scaleType="center"
+                android:src="@drawable/h5bt_comment"/>
+
+
+            <ImageView
+                android:id="@+id/bt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:scaleType="center"
+                android:src="@drawable/h5ic_share_btn"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_empty"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

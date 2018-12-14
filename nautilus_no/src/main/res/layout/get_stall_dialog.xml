@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent_white"
+              android:orientation="vertical"
+              android:paddingBottom="6dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_join_step"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_pay_deposit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_be_vendor_selector"
+            android:gravity="center"
+            android:text="缴纳摊位押金"
+            android:textColor="@drawable/get_booth_text_color_selector"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="摊位押金所有活动通用，无需二次缴纳"
+            android:textSize="@dimen/text_size_mini"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_step2"/>
+
+        <TextView
+            android:id="@+id/btn_join_active"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_btn_be_vendor_selector"
+            android:gravity="center"
+            android:text="报名本次活动"
+            android:textColor="@drawable/get_booth_text_color_selector"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="填写报名表单，申请报名本次活动"
+            android:textSize="@dimen/text_size_mini"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_step3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_buy_booth"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_btn_be_vendor_selector"
+            android:gravity="center"
+            android:text="购买摊位"
+            android:textColor="@drawable/get_booth_text_color_selector"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <TextView
+            android:id="@+id/tv_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="购买本次活动摊位"
+            android:textSize="@dimen/text_size_mini"/>
+    </LinearLayout>
+
+</LinearLayout>

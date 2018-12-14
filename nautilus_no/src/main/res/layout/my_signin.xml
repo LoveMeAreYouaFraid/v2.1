@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h">
+
+        <ImageView
+            android:id="@+id/iv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:background="@drawable/bg_user_main_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="活动签到"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/top_btn_press_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="分享"
+            android:textColor="@color/blue"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--未签到-->
+    <LinearLayout
+        android:id="@+id/ll_un_signed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/yuanjiao"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/you_can_sign"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/yuan"
+                android:enabled="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_extra_large" />
+
+            <TextView
+                android:id="@+id/sign_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fifteen"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/sign_msg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="小主，请签到"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fifteen">
+
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/fifteen"
+                android:drawableLeft="@drawable/gpsxx"
+                android:text=""
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_extra_extra_small" />
+
+
+            <include layout="@layout/fengexianx" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:text="签到规则"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_extra_extra_small" />
+
+            <TextView
+                android:id="@+id/tv_sign_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_extra_extra_small" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

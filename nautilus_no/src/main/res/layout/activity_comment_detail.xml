@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/activity_background" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_btn_press_selector"
+            android:src="@drawable/ic_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="评论详情"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_middle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.nautilus.ywlfair.widget.LoadMoreListView
+            android:id="@+id/lv_comment_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/light_light_gray"
+            android:dividerHeight="0.5dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </com.nautilus.ywlfair.widget.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_light_gray"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_reply_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/searchbox"
+            android:hint="输入评论回复内容"
+            android:maxLength="141"
+            android:padding="5dp"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/tv_confirm_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="回复"
+            android:textColor="@color/text_blue" />
+    </LinearLayout>
+
+</LinearLayout>

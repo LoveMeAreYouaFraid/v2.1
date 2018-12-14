@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:drawableRight="@drawable/bg_pay_yes"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:text="摊主不支持扫码付款"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_shiwu"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/content_color" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:text="摊主优惠与描述不符"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_shiwu"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/content_color" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:text="操作不方便"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_shiwu"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/content_color" />
+
+</LinearLayout>

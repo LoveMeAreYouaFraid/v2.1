@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:gravity="center"
+        android:text="请选择价格区间"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/dividing_line_layout" />
+
+    <TextView
+        android:id="@+id/price_range1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="0~300元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="300~500元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="500~800元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="800~1000元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="1000~2000元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="2000~5000元"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/price_range7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="其他价格区间"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+    <TextView
+        android:id="@+id/price_range8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="清除价格区间"
+        android:textColor="@color/normal_black" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#000" />
+
+</LinearLayout>

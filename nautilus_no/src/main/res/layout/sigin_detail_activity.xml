@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/wu">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/fifteen"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/view_main_img"
+                        android:layout_width="75dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:orientation="vertical" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/fifteen"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_extra_extra_small" />
+
+                    <TextView
+                        android:id="@+id/data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_shi_yi"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_shi_yi" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_shi_yi" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/home_pager_rounded"
+                        android:layout_marginBottom="@dimen/wu"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/text_size_shi_yi" />
+
+                    <include layout="@layout/fengexianx" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/unit_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/fifteen"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:background="@color/white"
+                android:gravity="center|right"
+                android:paddingRight="@dimen/fifteen"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <TextView
+                android:id="@+id/tickets_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/item_press_selector"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen"
+                android:text="门票二维码"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <ListView
+                android:id="@+id/tickets_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/divider_color"
+                android:dividerHeight="0.5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/butt"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_color"
+                android:paddingLeft="@dimen/fifteen"
+                android:paddingRight="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/tv_create_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_shiwu" />
+
+            <TextView
+                android:id="@+id/tv_pay_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_pager_rounded"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/fifteen"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/text_size_shiwu" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

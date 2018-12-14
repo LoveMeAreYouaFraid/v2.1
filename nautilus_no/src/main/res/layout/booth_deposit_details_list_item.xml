@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fifteen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:paddingTop="@dimen/fifteen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余押金"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@color/money_num"
+            android:textSize="@dimen/text_size_extra_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pay_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fifteen"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:visibility="gone">
+
+        <include layout="@layout/fengexianx" />
+
+        <TextView
+            android:id="@+id/tv_pay_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:text="未缴纳"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_extra_small" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_btn_press_selector"
+        android:orientation="vertical"
+        android:padding="@dimen/fifteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缴纳押金"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_extra_small" />
+
+            <TextView
+                android:id="@+id/tv_debit_records"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/bianjixxhdpi"
+                android:gravity="center|right"
+                android:text="扣款记录"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_extra_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_right_margin"
+            android:textColor="@color/normal_gray"
+            android:textSize="@dimen/text_size_extra_extra_small" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifteen"
+        android:background="@color/white" />
+
+</LinearLayout>

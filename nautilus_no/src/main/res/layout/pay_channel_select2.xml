@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/forty"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/tv_ail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/text_image_height"
+            android:layout_height="@dimen/text_image_height"
+            android:layout_marginRight="@dimen/home_pager_rounded"
+            android:src="@drawable/ali" />
+
+        <TextView
+            android:id="@+id/tv_a"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/butt"
+            android:gravity="center"
+            android:text="支付宝支付"
+            android:textColor="@color/dark_gray" />
+
+        <CheckBox
+            android:id="@+id/ck_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_pager_rounded"
+            android:button="@drawable/bg_new_pay_butt"
+            android:checked="true"
+            android:clickable="false"
+            android:textColor="@color/normal_black" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_wx"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/text_image_height"
+            android:layout_height="@dimen/text_image_height"
+            android:layout_marginRight="@dimen/home_pager_rounded"
+            android:src="@drawable/wx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/forty"
+            android:gravity="center"
+            android:text="微信支付"
+            android:textColor="@color/dark_gray" />
+
+        <CheckBox
+            android:id="@+id/ck_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_pager_rounded"
+            android:button="@drawable/bg_new_pay_butt"
+            android:checked="false"
+            android:clickable="false"
+            android:textColor="@color/normal_black" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

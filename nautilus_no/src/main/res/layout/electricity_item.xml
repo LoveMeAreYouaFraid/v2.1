@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/fifteen"
+    android:paddingRight="@dimen/fifteen">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电磁炉"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_extra_small" />
+
+    <TextView
+        android:id="@+id/tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/butt"
+        android:text="1000W"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_extra_small" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_extra_small" />
+
+    <TextView
+        android:id="@+id/tv_dell"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:background="@drawable/item_press_selector"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_extra_small" />
+
+</LinearLayout>

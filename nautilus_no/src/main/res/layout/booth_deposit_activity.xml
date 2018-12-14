@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <LinearLayout
+        android:id="@+id/layout_is_pay_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:background="@drawable/item_press_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="@dimen/fifteen"
+            android:text="摊位押金"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_extra_small" />
+
+        <TextView
+            android:id="@+id/tv_is_pay_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/bianjixxhdpi"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/fifteen"
+            android:textColor="@color/money_num"
+            android:textSize="@dimen/text_size_extra_small" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_booth_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fifteen"
+        android:visibility="gone"
+        android:paddingRight="@dimen/fifteen">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_line_height"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/tv_pay_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/butt"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fifteen"
+            android:background="@drawable/bg_blue_rounded"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:text="摊位押金：￥500.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_extra_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_booth_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen"
+        android:text="@string/deposit_notes"
+        android:textSize="@dimen/text_size_extra_small" />
+
+</LinearLayout>

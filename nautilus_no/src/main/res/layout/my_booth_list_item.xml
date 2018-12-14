@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_active_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:text="唤醒一整年的活力Awaken觉醒·鹦鹉螺市集春季"
+        android:ellipsize="end"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_extra_small"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:paddingRight="100dp"
+        android:paddingLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_background"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="66dp"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_booth_round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动场次：第一场"
+                android:textColor="@color/normal_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_extra_extra_small"/>
+
+            <TextView
+                android:id="@+id/tv_booth_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="摊位类型：A型"
+                android:textColor="@color/normal_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_extra_extra_small"/>
+
+            <TextView
+                android:id="@+id/tv_active_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动日期：2015.07.04 ~ 07.05"
+                android:textColor="@color/normal_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/text_size_extra_extra_small"/>
+
+            <TextView
+                android:id="@+id/tv_active_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动时间：AM 08:00 ~ PM 09:00"
+                android:textColor="@color/normal_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/text_size_extra_extra_small"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动地址：上海民生美术馆"
+                android:textColor="@color/normal_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/text_size_extra_extra_small"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_booth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="实付："
+            android:textColor="@color/normal_gray"
+            android:textSize="@dimen/text_size_extra_small"
+            android:layout_weight="1"
+            android:gravity="right|center"/>
+
+        <TextView
+            android:id="@+id/tv_booth_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="￥800.00"
+            android:paddingRight="20dp"
+            android:textColor="@color/money_num"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/fengexianx"/>
+
+    <LinearLayout
+        android:id="@+id/ll_un_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="剩余时间："
+            android:textSize="@dimen/text_size_extra_small"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:textColor="@color/normal_gray"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="12分13秒"
+            android:textSize="@dimen/text_size_extra_small"
+            android:layout_weight="1"
+            android:gravity="left|center"/>
+
+
+        <TextView
+            android:id="@+id/tv_pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款"
+            android:textColor="@color/blue"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_blue1_rounded_rectangle"/>
+    </LinearLayout>
+</LinearLayout>

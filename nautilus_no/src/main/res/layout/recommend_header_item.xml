@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/recommend_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/recommend_header_cover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#cc000000"
+        >
+
+        <TextView
+            android:id="@+id/recommend_header_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:text="创意分享"
+            android:textColor="@color/yellow_normal"
+            android:textSize="@dimen/text_size_mini"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/recommend_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2sp"
+                android:maxLines="2"
+                android:text="发生的防守对方受到广泛撒地as佛挡杀佛的双方的首发似懂非懂三分大赛复赛方撒"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/recommend_header_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/diansibain"
+                android:drawablePadding="10dp"
+                android:paddingTop="6dp"
+                android:text="作者:大苏  2015 06~"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+            <TextView
+                android:id="@+id/recommend_header_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="   啊号地块sand看似目的on马松i盘点mask的吗大摩萨卡梅德斯卡梅达大摩萨卡丢了mask到了萨姆"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_extra_small"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

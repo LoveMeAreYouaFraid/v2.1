@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/signin_bg"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_back_white"
+            android:paddingLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_top_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="线下交易收款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_top_bar_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_instruction"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="30dp"
+        android:background="@drawable/bg_money_code"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/default_avatar"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_small"
+            android:text="aaa"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="使用支付宝或者微信扫码向我付款"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_gray"/>
+
+        <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:aspectRatio="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_check_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="查看交易记录"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</LinearLayout>

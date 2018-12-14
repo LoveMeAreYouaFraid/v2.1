@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.nautilus.ywlfair.widget.photoview.PhotoView
+        android:id="@+id/iv_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter" >
+    </com.nautilus.ywlfair.widget.photoview.PhotoView>
+
+    <ImageView
+        android:id="@+id/iv_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter" >
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_loading_small" />
+
+</RelativeLayout>

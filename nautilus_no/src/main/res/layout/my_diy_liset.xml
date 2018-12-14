@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:background="@drawable/top_btn_press_selector"
+            android:drawableLeft="@drawable/ic_back_selector"
+            android:gravity="center"
+            android:text="我的原创"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_large" />
+        
+        <include 
+            layout="@layout/dividing_line_layout"/>
+
+    </LinearLayout>
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <com.nautilus.ywlfair.widget.LoadMoreListView
+            android:id="@+id/lv_diy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:listSelector="@color/transparent" >
+        </com.nautilus.ywlfair.widget.LoadMoreListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    
+     <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableTop="@drawable/ic_empty"
+        android:visibility="gone"
+        android:text="您还没有原创"
+        android:textColor="@color/normal_gray" />
+    </FrameLayout>
+    
+
+</LinearLayout>

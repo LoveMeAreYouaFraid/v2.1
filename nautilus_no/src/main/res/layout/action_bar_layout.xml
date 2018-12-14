@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_h"
+    android:background="@color/activity_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/top_btn_press_selector"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/scanning_code"
+            android:layout_width="@dimen/er_qi"
+            android:layout_height="@dimen/er_qi"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:src="@drawable/saoyisao" />
+
+        <ImageView
+            android:id="@+id/img_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/iv_main_text" />
+
+
+        <ImageView
+            android:id="@+id/imagebutton_login"
+            android:layout_width="@dimen/er_qi"
+            android:layout_height="@dimen/er_qi"
+            android:layout_marginRight="@dimen/fifteen"
+            android:background="@drawable/top_btn_press_selector"
+            android:src="@drawable/ic_calendar" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:background="@color/content_color" />
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="*"
+            android:textColor="@color/dark_red"/>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货品信息:"
+            android:textColor="@color/normal_black"/>
+    </LinearLayout>
+
+    <include layout="@layout/fengexianx"/>
+
+    <LinearLayout
+        android:id="@+id/touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_item_h"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/normal_black"
+            android:text="货品品类"/>
+
+        <TextView
+            android:id="@+id/tv_product_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center|right"
+            android:paddingLeft="15dp"
+            android:textColor="@color/normal_gray"/>
+    </LinearLayout>
+
+    <include layout="@layout/fengexianx"/>
+
+    <LinearLayout
+        android:id="@+id/tossuxiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_item_h"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/normal_black"
+            android:text="货品风格"/>
+
+
+        <TextView
+            android:id="@+id/tv_product_from"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center|right"
+            android:textColor="@color/normal_gray"/>
+    </LinearLayout>
+
+    <include layout="@layout/fengexianx"/>
+
+    <LinearLayout
+        android:id="@+id/tousxiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_item_h"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/TextsView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/normal_black"
+            android:text="价格区间"/>
+
+        <TextView
+            android:id="@+id/tv_price_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center|right"
+            android:textColor="@color/normal_gray"/>
+    </LinearLayout>
+
+    <include layout="@layout/fengexianx"/>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/normal_black"
+            android:text="货品图片"/>
+
+        <TableLayout
+            android:id="@+id/tl_multi_pics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TableRow
+                android:id="@+id/tr_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:visibility="gone" >
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:visibility="gone" >
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_multi_pics_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

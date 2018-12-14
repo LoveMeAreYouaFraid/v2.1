@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                    android:id="@+id/iv_ywl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:aspectRatio="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_invitation_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_friends"
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/butt"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/fifteen"
+                        android:background="@drawable/bg_yellow_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text="邀请好友，获得摊主积分"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_shiwu" />
+
+                    <TextView
+                        android:id="@+id/tv_old_user"
+                        android:layout_width="250dp"
+                        android:layout_height="@dimen/butt"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/butt"
+                        android:layout_marginTop="@dimen/text_image_height"
+                        android:background="@drawable/bg_red_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/fifteen"
+                        android:paddingRight="@dimen/fifteen"
+                        android:text="填写邀请码"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/text_size_shiwu" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+                android:id="@+id/iv_ywl_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:aspectRatio="0.82" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

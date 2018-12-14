@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <EditText
+        android:id="@+id/ed_other_reasons"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:textColor="@color/normal_black"
+        android:maxLength="500"
+        android:hint="请详细描述您的问题，让我们更好的为您服务(500字)"
+        android:padding="@dimen/fifteen" />
+
+    <TextView
+        android:id="@+id/tv_text_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingBottom="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:text="500"
+        android:textColor="@color/normal_gray" />
+
+</LinearLayout>

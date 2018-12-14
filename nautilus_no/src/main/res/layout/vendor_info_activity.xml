@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:background="@color/activity_background"
+        android:layout_height="@dimen/toolbar_h">
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/top_btn_press_selector"
+            android:drawableLeft="@drawable/ic_back_selector" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="摊主信息"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_middle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_h"
+            android:background="@color/activity_background"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_item_h"
+                android:text="个人信息"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_extra_small"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                />
+
+            <include
+                 android:id="@+id/recommend_1"
+                 layout="@layout/vendor_info_first_item" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_item_h"
+                android:text="商品信息"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_extra_small"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                />
+
+            <include
+                android:id="@+id/recommend_4"
+                layout="@layout/vendor_info_fouth_item" />
+
+            <include layout="@layout/fengexianx"/>
+
+             <include
+                 android:id="@+id/recommend_2"
+                 layout="@layout/vendor_info_second_item" />
+
+            <include layout="@layout/fengexianx"/>
+
+             <include
+                 android:id="@+id/recommend_3"
+                 layout="@layout/vendor_info_third_item" />
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/img_vendor_message"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

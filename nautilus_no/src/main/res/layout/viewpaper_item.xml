@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.nautilus.ywlfair.widget.AutoAdjustHeightImageView
+        xmlns:app="http://schemas.android.com/apk/res/com.nautilus.ywlfair"
+        android:id="@+id/title_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:aspectRatio="1.88"
+         />
+
+</LinearLayout>

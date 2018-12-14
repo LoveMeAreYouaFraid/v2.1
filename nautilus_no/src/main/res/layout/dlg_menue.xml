@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:text="消息管理"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_middle" />
+
+    <include layout="@layout/fenge_hei" />
+
+    <TextView
+        android:id="@+id/tv_set_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_default_selector"
+        android:gravity="center"
+        android:minHeight="@dimen/butt"
+        android:text="设为已读"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_small" />
+
+    <include layout="@layout/fengexianx" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_default_selector"
+        android:gravity="center"
+        android:minHeight="@dimen/butt"
+        android:text="删除"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+    <dimen name="title_left_margin">13dp</dimen>
+    <dimen name="title_right_margin">8dp</dimen>
+    <dimen name="toolbar_h">50dp</dimen>
+    <dimen name="toolbar_hxx">80dp</dimen>
+    <dimen name="ninety_four">94dp</dimen>
+    <dimen name="home_pager_rounded">6dp</dimen>
+    <dimen name="order_item_h">45dp</dimen>
+    <dimen name="gridview_horizontal_spacing">3dp</dimen>
+    <dimen name="gridview_vertical_spacing">3dp</dimen>
+    <dimen name="da">180dp</dimen>
+    <dimen name="butt">44dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="wu">5dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="divider_line_height">1dp</dimen>
+    <dimen name="text_image_height">20dp</dimen>
+    <dimen name="image_height">60dp</dimen>
+    <dimen name="image_top">30dp</dimen>
+    <dimen name="image_top_si_shi_ba">48dp</dimen>
+    <dimen name="image_top_er_shi_si">24dp</dimen>
+    <dimen name="shi_er">12dp</dimen>
+    <dimen name="er_qi">27dp</dimen>
+
+    <!-- size of front -->
+    <dimen name="text_size_big">40sp</dimen>
+    <dimen name="text_size_extra_extra_large">28sp</dimen>
+    <dimen name="text_size_extra_large">22sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_middle">18sp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_extra_small">14sp</dimen>
+    <dimen name="text_size_extra_extra_small">12sp</dimen>
+    <dimen name="text_size_shi_yi">11sp</dimen>
+    <dimen name="text_size_extra_extra">8sp</dimen>
+    <dimen name="text_size_mini">10sp</dimen>
+    <dimen name="text_size_san_shi">30sp</dimen>
+    <dimen name="text_size_shiwu">15sp</dimen>
+
+
+</resources>

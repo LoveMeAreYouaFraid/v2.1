@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/tv_get_goods"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_h"
+        android:background="@color/activity_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_top_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/top_btn_press_selector"
+            android:drawableLeft="@drawable/ic_back_selector"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:text="我的订单"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_large" />
+        
+        <include 
+            layout="@layout/dividing_line_layout"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/bt_huang"
+        app:tabSelectedTextColor="@color/bt_huang"
+        app:tabTextColor="@color/normal_black"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

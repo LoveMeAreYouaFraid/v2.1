@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_pic_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:text="活动图片"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/diansibain"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/gray_background"
+        android:textSize="@dimen/text_size_middle"
+        android:textColor="@color/normal_black"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_video_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/butt"
+        android:text="活动视频"
+        android:gravity="center_vertical"
+        android:background="@color/gray_background"
+        android:drawableLeft="@drawable/diansibain"
+        android:drawablePadding="5dp"
+        android:textSize="@dimen/text_size_middle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/normal_black"/>
+
+</LinearLayout>
